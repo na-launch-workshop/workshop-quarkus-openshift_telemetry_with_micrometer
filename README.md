@@ -14,6 +14,8 @@ If you want to learn more about Quarkus, please visit its website: <https://quar
 
 Welcome! In this hands-on you’ll use Red Hat build of OpenTelemetry together with Micrometer in a Quarkus app deployed to OpenShift. You’ll start with a flaky service, instrument it, ship metrics & traces, and use OpenShift Observe → Metrics (Prometheus) and Jaeger/Tempo to diagnose and fix the issue.
 
+---
+
 ## 🧩 **Challenge**
 
 What you’ll do:
@@ -25,9 +27,13 @@ What you’ll do:
 - [ ] Confirm the root cause in Jaeger traces.
 - [ ] Ship a fix, re-deploy, and verify the improvement.
 
+---
+
 ### Story
 
 You’ve been paged: the endpoint is sometimes ~200 ms slower and occasionally fails. Your first clue must come from Micrometer metrics; then you’ll drill down with OpenTelemetry traces to see exactly where the time goes.
+
+---
 
 ### Layout
 
@@ -35,6 +41,8 @@ src/main/java/com/training
 - WorkResource.java             # The main endpoint with instrumentation already
 - DownstreamService.java        # Called by WorkResource to do processing
 - TrafficGeneratorService.java  # Generates traffic so you don't have to
+
+---
 
 ### MicroMeter promQL
 
@@ -51,6 +59,8 @@ Rate of the Counter
 ```bash
 sum(rate(app_work_retries_total[5m]))
 ```
+
+---
 
 ### Environment setup
 
@@ -86,6 +96,8 @@ After running this you should see some success.
 [✓] Current project follows convention: userid-devspaces
 ```
 
+---
+
 ### Workshop core script
 
 There is workshop script that does some common tasks and has additional checks available.  the setup-env.sh sets this script up among others to be available.
@@ -113,6 +125,8 @@ Examples:
   ./workshop.sh deploy
   ./workshop.sh components
 ```
+
+---
 
 ### Steps
 
