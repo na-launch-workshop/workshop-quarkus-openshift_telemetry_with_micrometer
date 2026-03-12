@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: workshop-quarkus-openshift_telemetry_with_micrometer
+  title: Using OpenTelemetry and Micrometer
+  description: |
+    Using Red Hat build of OpenTelemetry with Micrometer
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - opentelemetry
+    - micrometer
+    - quarkus
+# links:
+#    - url: https://<openshift-cluster>/#<hosted-git-repo>
+#      title: "Launch from Dev Spaces"
+#      icon: web
+spec:
+  type: module
+  lifecycle: production
+  owner: group:default/workshop-admins
+  subcomponentOf: component:default/workshop-repository
