@@ -4,7 +4,7 @@ metadata:
   name: workshop-quarkus-openshift_telemetry_with_micrometer
   title: Using OpenTelemetry and Micrometer
   description: |
-    Monitoring Workloads and Troubleshooting Using OpenTelemetry
+    Instrument, Trace, and Monitor with OpenTelemetry & Micrometer
   annotations:
     backstage.io/techdocs-ref: dir:.
 #   backstage.io/techdocs-ref: dir:https://<hosted-git-repo>   # use absolute path instead to consolidate techdocs among repo forks

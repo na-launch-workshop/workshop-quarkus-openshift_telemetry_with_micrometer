@@ -1,5 +1,5 @@
 site_name: Using OpenTelemetry and Micrometer
-site_description: Monitoring Workloads and Troubleshooting Using OpenTelemetry
+site_description: Instrument, Trace, and Monitor with OpenTelemetry & Micrometer
 
 nav:
   - Overview: index.md
